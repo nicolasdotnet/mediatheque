@@ -1,0 +1,24 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<p>product-card-component works!</p>
+
+<!-- <p>{{product.nom}}</p>
+<p>{{product.real}}</p>
+<p>{{product.synopsis}}</p>
+<p>{{product.annee}}</p>
+<p>{{product.details}}</p> -->
+
+
+<div class="card" style="width: 18rem;"> <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+        <h4 class="card-title">{{product.nom | slice:0:10}}<span *ngIf="product.nom.length>10">...</span></h4>
+        <h5 *ngIf="product.artiste">{{product.artiste}}</h5>
+        <h5 *ngIf="product.real">{{product.real}}</h5>
+
+        <img src="" alt="licorne" *ngIf="product.img">
+        <img [src]="product.img" [alt]="product.nom" *ngIf="product.img">
+        
+        <p class="card-text" *ngIf="product.synopsis">{{product.synopsis | slice:0:140}}<span>...</span></p> 
+        <a routerLink="/products/{{product.id}}" class="btn btn-primary">Détails</a>
+    </div>
+</div>

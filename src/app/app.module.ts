@@ -9,6 +9,7 @@ import { NotFoundComponent } from './commons/not-found/not-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { ProductListComponentComponent } from './pages/products-page/product-list-component/product-list-component.component';
+import { ProductCardComponentComponent } from './pages/products-page/product-card-component/product-card-component.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductListComponentComponent } from './pages/products-page/product-lis
     NotFoundComponent,
     HomePageComponent,
     ProductsPageComponent,
-    ProductListComponentComponent
+    ProductListComponentComponent,
+    ProductCardComponentComponent
   ],
   imports: [
     BrowserModule,
