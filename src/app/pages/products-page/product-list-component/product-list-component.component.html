@@ -2,6 +2,6 @@
 
 <div *ngFor="let product of products" class="suggestion_products column_products">
     <div>
-        <p>{{product.nom}}</p>
+        <app-product-card-component [product]="product"></app-product-card-component>
     </div>
 </div>
