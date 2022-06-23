@@ -2,23 +2,17 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <p>product-card-component works!</p>
 
-<!-- <p>{{product.nom}}</p>
-<p>{{product.real}}</p>
-<p>{{product.synopsis}}</p>
-<p>{{product.annee}}</p>
-<p>{{product.details}}</p> -->
 
+<div class="card">
+    <div class="card-body result_products">
+        <h5 class="card-title">{{product.nom | slice:0:10}}<span *ngIf="product.nom.length>10"> ...</span></h5>
+        <h6 *ngIf="product.artiste">{{product.artiste}}</h6>
+        <h6 *ngIf="product.real">{{product.real}}</h6>
 
-<div class="card" style="width: 18rem;"> <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-        <h4 class="card-title">{{product.nom | slice:0:10}}<span *ngIf="product.nom.length>10">...</span></h4>
-        <h5 *ngIf="product.artiste">{{product.artiste}}</h5>
-        <h5 *ngIf="product.real">{{product.real}}</h5>
-
-        <img src="" alt="licorne" *ngIf="product.img">
-        <img [src]="product.img" [alt]="product.nom" *ngIf="product.img">
+        <img src="https://previews.123rf.com/images/reginast777/reginast7771804/reginast777180400033/99168187-mignon-licorne-de-bande-dessin%C3%A9e-avec-des-lunettes-de-soleil.jpg" alt="licorne" *ngIf="!product.img" class="product_visual">
+        <img [src]="product.img" [alt]="product.nom" *ngIf="product.img" class="product_visual">
         
-        <p class="card-text" *ngIf="product.synopsis">{{product.synopsis | slice:0:140}}<span>...</span></p> 
+        <p class="text-width-synopsis" *ngIf="product.synopsis">{{product.synopsis | slice:0:140}}<span> ...</span></p> 
         <a routerLink="/products/{{product.id}}" class="btn btn-primary">Détails</a>
     </div>
 </div>
