@@ -1,16 +1,8 @@
 <p>products-page works!</p>
 <div class="container_products">
-<h2>Liste de films</h2>
-<div *ngFor="let film of films" class="suggestion_products column_products">
-    <div>
-        <p>{{film.nom}}</p>
-    </div>
-</div>
+    <h2>Liste de films</h2>
+    <app-product-list-component [products]="films"></app-product-list-component>
 
-<h2>Liste des albums</h2>
-<div *ngFor="let album of albums" class="suggestion_products column_products">
-    <div>
-        <p>{{album.nom}}</p>
-    </div>
-</div>
+    <h2>Liste des albums</h2>
+    <app-product-list-component [products]="albums"></app-product-list-component>
 </div>
