@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { ProductListComponentComponent } from './pages/products-page/product-list-component/product-list-component.component';
 import { ProductCardComponentComponent } from './pages/products-page/product-card-component/product-card-component.component';
+import { UtilisateurFormulaireComponent } from './component/utilisateur-formulaire/utilisateur-formulaire.component';
+import { UtilisateurCardComponent } from './component/utilisateur-card/utilisateur-card.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,17 @@ import { ProductCardComponentComponent } from './pages/products-page/product-car
     HomePageComponent,
     ProductsPageComponent,
     ProductListComponentComponent,
-    ProductCardComponentComponent
+    ProductCardComponentComponent,
+    UtilisateurFormulaireComponent,
+    UtilisateurCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
