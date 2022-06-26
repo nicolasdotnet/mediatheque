@@ -1,27 +1,54 @@
 # Mediatheque
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+Médiathéque est un Poc Angular.
 
-## Development server
+L'objectif de l'application est de simuler une ihm pour consulter les films et albums disponiblent dans une médiatéque.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Avertisement : 
+L'application n'est pour le moment pas finalisée fonctionnellement.
 
-## Code scaffolding
+Roadmap :
+Médiatéque peut être envisagé comme une refonte du front office du projet Librairies : 
+https://github.com/nicolasdotnet/libraries-upgrade
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Médiathéque a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
-## Build
+## Prérequis
+nodejs v16.14.2 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Déploiement pour développeur
 
-## Running unit tests
+### Clonez le projet :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+git clone https://github.com/nicolasdotnet/mediatheque.git
+```
 
-## Running end-to-end tests
+### Initialisation de l'application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Dans votre terminal à la racine du dossier de l'application, exécutez la commande : 
+```
+npm install
+```
+Cette commande va télécharger les modules nécessaire à l'application.
 
-## Further help
+## Lancement de l'application
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### serveur db/json
+
+A la racine du dossier de l'application, exécutez la commande :
+```
+npm run start:db
+```
+Le serveur json-serveur sera lancé.
+
+### serveur de l'application
+
+A la racine du dossier de l'application, exécutez la commande :
+```
+ng serve -o
+```
+Le serveur de l'application Angular sera lancé.
+Un onglet de votre navigateur par défault va s'ouvrir à l'url `http://localhost:4200/`.
+
+L'application est opérationnelle !

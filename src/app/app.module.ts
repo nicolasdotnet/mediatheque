@@ -15,6 +15,7 @@ import { ProductCardComponentComponent } from './pages/products-page/product-car
 import { UtilisateurFormulaireComponent } from './component/utilisateur-formulaire/utilisateur-formulaire.component';
 import { UtilisateurCardComponent } from './component/utilisateur-card/utilisateur-card.component';
 import { ProductShowComponent } from './pages/products-page/product-show-component/product-show.component';
+import { ProductFormComponent } from './pages/products-page/product-form/product-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProductShowComponent } from './pages/products-page/product-show-compone
     ProductCardComponentComponent,
     UtilisateurFormulaireComponent,
     UtilisateurCardComponent,
-    ProductShowComponent
+    ProductShowComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,

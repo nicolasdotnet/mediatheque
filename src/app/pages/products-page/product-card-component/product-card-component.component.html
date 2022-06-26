@@ -12,6 +12,9 @@
         <img [src]="product.img" [alt]="product.nom" *ngIf="product.img" class="product_visual">
         
         <p class="text-width-synopsis" *ngIf="product.synopsis">{{product.synopsis | slice:0:140}}<span> ...</span></p> 
-        <a routerLink="/products/{{product.id}}" class="btn btn-primary">Détails</a>
+        <div>
+            <a *ngIf="product.real" routerLink="/products/films/{{product.id}}" class="btn btn-primary">Détails</a>
+            <a *ngIf="product.artiste" routerLink="/products/albums/{{product.id}}" class="btn btn-primary">Détails</a>
+        </div>
     </div>
 </div>
