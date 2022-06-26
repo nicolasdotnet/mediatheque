@@ -1,0 +1,23 @@
+.container_products {
+    max-width: 1050px;
+    margin: 90px auto;
+    padding: 0 15px;
+}
+
+.suggestion_products {
+    width: 838px;
+    height: 233px;
+    display: flex;
+
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.column_products {
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+<div class="card result_products">
+    <div class="card-body">
+        <h5 class="card-title">{{product.nom | slice:0:10}}<span *ngIf="product.nom.length>10"> ...</span></h5>
+        <!-- <h6 *ngIf="product.artiste">{{product.artiste}}</h6>
+        <h6 *ngIf="product.real">{{product.real}}</h6> -->
+
+        <img src="https://previews.123rf.com/images/reginast777/reginast7771804/reginast777180400033/99168187-mignon-licorne-de-bande-dessin%C3%A9e-avec-des-lunettes-de-soleil.jpg" alt="licorne" *ngIf="!product.img" class="product_visual">
+        <img [src]="product.img" [alt]="product.nom" *ngIf="product.img" class="product_visual">
+        
+        <!-- <p class="text-width-synopsis" *ngIf="product.synopsis">{{product.synopsis | slice:0:140}}<span> ...</span></p> 
+        <div>
+            <a *ngIf="product.real" routerLink="/products/films/{{product.id}}" class="btn btn-primary">Détails</a>
+            <a *ngIf="product.artiste" routerLink="/products/albums/{{product.id}}" class="btn btn-primary">Détails</a>
+        </div> -->
+    </div>
+</div>
