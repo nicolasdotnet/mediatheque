@@ -2,9 +2,9 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 <div class="container_products">
-    <div class="card result_products">
-        <div class="card-body">
-            <h5 class="card-title">{{product.nom | slice:0:10}}<span *ngIf="product.nom.length>10"> ...</span></h5>
+    <div class="result_products">
+        <div class="">
+            <h5 class="">{{product.nom | slice:0:100}}<span *ngIf="product.nom.length>100"> ...</span></h5>
             <h6 *ngIf="product.artiste">{{product.artiste}}</h6>
             <h6 *ngIf="product.real">{{product.real}}</h6>
 
