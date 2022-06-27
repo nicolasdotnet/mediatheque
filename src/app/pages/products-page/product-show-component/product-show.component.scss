@@ -1,0 +1,23 @@
+.container_products {
+    max-width: 1050px;
+    margin: 90px auto;
+    padding: 0 15px;
+}
+
+.product_visual {
+    width: 90px;
+    height: 110px;
+}
+
+.result_products {
+    width: 238px;
+    height: 333px;
+    margin-right: 15px;
+    display: flexbox;
+    flex-direction: row;
+}
+
+.text-width-synopsis {
+
+    font-size: 10px;
+}

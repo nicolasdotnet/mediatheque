@@ -11,7 +11,7 @@ import { FilmHttpService } from 'src/app/services/film-http.service';
   styleUrls: ['./product-show.component.scss'],
 })
 export class ProductShowComponent implements OnInit {
-  product!: Film | Album;
+  product!: any;
   typeProduct!:string;
 
   constructor(

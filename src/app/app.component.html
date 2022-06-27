@@ -2,7 +2,7 @@
 <router-outlet></router-outlet>
 <app-footer></app-footer>
 
-<div *ngFor="let utilisateur of utilisateurs">
+<!-- <div *ngFor="let utilisateur of utilisateurs">
     {{utilisateurs | json}}
     <app-utilisateur-card [utilisateur]="utilisateur" (delete)="onDelete($event)" (edit)="onEdit($event)">
     </app-utilisateur-card>
@@ -10,4 +10,4 @@
     <app-utilisateur-formulaire *ngIf="utilisateur.id == editUtilisateur?.id" [default]="utilisateur">
     </app-utilisateur-formulaire>
 </div>
-<app-utilisateur-formulaire (finish)="onSave($event)"></app-utilisateur-formulaire>
+<app-utilisateur-formulaire (finish)="onSave($event)"></app-utilisateur-formulaire> -->
